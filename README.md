@@ -24,7 +24,7 @@ Add SnapAlert to your main Vue entry file (usually `main.js` or `main.ts`).
 import { createApp } from 'vue';
 import App from './App.vue';
 import SnapAlert from 'vue-snap-alert';
-import 'vue-snap-alert/dist/alertify.css'; // Import the CSS
+import 'vue-snap-alert/dist/snapAlert.css'; // Import the CSS
 
 const app = createApp(App);
 
