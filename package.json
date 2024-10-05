@@ -1,6 +1,6 @@
 {
   "name": "vue-snap-alert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SnapAlert is a lightweight Vue 3 plugin that provides customizable and user-friendly alert notifications , Easily display alerts, confirmations, and prompts in your Vue applications with simple methods and flexible options.",
   "homepage": "https://zain.picker.sd",
   "main": "./dist/index.js",
@@ -12,7 +12,7 @@
   "author": "Zainalabdeen Radwan <zain@picker.sd> (https://picker.sd)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mczainalabdeen/snap-alert-vue.git"
+    "url": "https://github.com/mczainalabdeen/vue-snap-alert.git"
   },
  
   "license": "MIT"
