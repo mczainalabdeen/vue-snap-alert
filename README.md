@@ -79,7 +79,7 @@ You can customize the options for each alert. For example:
 this.$SnapAlert.info('Information', 'This is an info alert.', {
   position: 'top right',
   duration: 5000,
-  icon: 'custom-icon-class',
+  icon: 'custom-icon-class', // Replace with a Boxicons class name (https://boxicons.com)
   isDark: true
 });
 ```
