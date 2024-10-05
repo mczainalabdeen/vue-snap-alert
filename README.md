@@ -115,10 +115,10 @@ this.$SnapAlert.error('Global Error', 'This alert will also use global options.'
 ### Available Options
 
 - **rtl**: `false` (Enable/disable right-to-left support)
-- **type**: `'info'`, `'success'`, `'error'`, `'warning'`, or `null`
+- **type**: `'info'`, `'success'`, `'error'`, `'warning'`
 - **title**: The title of the alert
 - **message**: The message of the alert
-- **position**: `'top left'`, `'top right'`, `'bottom left'`, `'bottom right'`, etc.
+- **position**: `'top left'`, `'top right'`, `'bottom left'`, `'bottom right'`, `'top center'`, `'bottom center'`.
 - **duration**: Time before auto-close (in milliseconds, default is 3000)
 - **autoClose**: Automatically close the alert (default is `true`)
 - **enableConfirm**: Show confirm button (default is `false`)
