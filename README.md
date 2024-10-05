@@ -1,11 +1,8 @@
-Certainly! Let's update the `README.md` to include a section about the `SnapOptions` function, which allows users to set global options for the alerts. Here's how you can structure that section in the documentation:
-
-### Updated `README.md` Documentation
-
-```markdown
 # SnapAlert for Vue 3
 
 **SnapAlert** is a lightweight and customizable Vue 3 plugin designed for adding stylish alert notifications to your app. This plugin allows you to easily display alerts, confirmations, prompts, and even custom HTML notifications in a user-friendly way.
+
+
 
 ## Installation
 
@@ -139,12 +136,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Zainalabdeen Radwan**  
 [Website](https://picker.sd) | [Email](mailto:zain@picker.sd)
-```
-
-### Key Additions
-
-1. **Step 4: Set Global Options with `SnapOptions`**: This new section explains how to use the `SnapOptions` method to set global default options for the alerts.
-
-2. **Example of Using Global Options**: This example shows how to apply the global options and how it affects subsequent alerts.
-
-With these additions, your documentation will provide users with clear instructions on how to utilize the `SnapOptions` function effectively. If you need any more adjustments or additional features documented, feel free to ask!
