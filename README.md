@@ -89,11 +89,7 @@ this.$SnapAlert.info('Information', 'This is an info alert.', {
 You can display various types of alerts using the provided methods. Below is an example of how to show a custom HTML alert:
 
 ```javascript
-this.$SnapAlert.html(`
-    <div>
-    <img width="200px" src="https://placehold.co/600x400/72BF78/FFF7D1?text=Snap+Alert+Vue&font=oswald" />
-    </div>
-    ` , {
+this.$SnapAlert.html(`<img src="https://placehold.co/600x400" />`, {
         position: 'top right',
         duration: 5000,
     }
