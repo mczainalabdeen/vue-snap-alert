@@ -84,7 +84,24 @@ this.$SnapAlert.info('Information', 'This is an info alert.', {
 });
 ```
 
-### Step 4: Set Global Options with `SnapOptions`
+### 4. Displaying HTML Alerts
+
+You can display various types of alerts using the provided methods. Below is an example of how to show a custom HTML alert:
+
+```javascript
+this.$SnapAlert.html(`
+    <div>
+    <img width="200px" src="https://placehold.co/600x400/72BF78/FFF7D1?text=Snap+Alert+Vue&font=oswald" />
+    </div>
+    ` , {
+        position: 'top right',
+        duration: 5000,
+    }
+);
+```
+
+
+### Step 5: Set Global Options with `SnapOptions`
 
 You can use the `SnapOptions` method to set global default options for all alerts. This is particularly useful if you want to maintain consistency across multiple alerts.
 
