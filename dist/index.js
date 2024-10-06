@@ -73,7 +73,7 @@ const SnapAlert = {
             if (!container) {
                 const alertDiv = document.createElement('div');
                 alertDiv.classList.add('alert-container', positions[settings.position] , 'alert-animation-'+settings.animation);
-                document.body.querySelector('#app').appendChild(alertDiv);
+                document.body.appendChild(alertDiv);
                 container = alertDiv;
             }
 
@@ -182,7 +182,7 @@ const SnapAlert = {
             error: (title, message, options) => createAlert('error', title, message, options),
             warning: (title, message, options) => createAlert('warning', title, message, options),
             info: (title, message, options) => createAlert('info', title, message, options),
-            alert: (title, message, options) => createAlert(null, title, message, options),
+            alert: (title, message, options) => createAlert('alert', title, message, options),
             html: (title , options) => createAlert('html', title , null , options ),
             SnapOptions : (options) => setGlobalOptions(options),
             clearAll : () => clearAll(),
