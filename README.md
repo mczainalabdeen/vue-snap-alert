@@ -50,6 +50,13 @@ this.$SnapAlert.alert('Alert Title', 'This is a basic alert.');
 this.$SnapAlert.success('Success', 'Your operation was successful!');
 ```
 
+#### Info Alert
+
+```javascript
+this.$SnapAlert.info('Info', 'Be Notice!');
+```
+
+
 #### Error Alert
 
 ```javascript
