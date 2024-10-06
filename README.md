@@ -1,37 +1,28 @@
-# SnapAlert for Vue 3
+Sure! Here’s how the content can be structured in a Markdown file format without referring to it as a plugin:
 
-**SnapAlert** is a lightweight and customizable Vue 3 plugin designed for adding stylish alert notifications to your app. This plugin allows you to easily display alerts, confirmations, prompts, and even custom HTML notifications in a user-friendly way.
+# SnapAlert for React
 
-
+**SnapAlert** is a lightweight and customizable React library designed for adding stylish alert notifications to your app. This library allows you to easily display alerts, confirmations, prompts, and even custom HTML notifications in a user-friendly way.
 
 ## Installation
 
-You can install the plugin via npm:
+You can install the library via npm:
 
 ```bash
-npm install vue-snap-alert
+npm install react-snap-alert
 ```
 
 ## Usage
 
-Here's how to use SnapAlert in your Vue 3 project:
+Here's how to use SnapAlert in your React project:
 
-### Step 1: Import and Use the Plugin
+### Step 1: Import and Use the Library
 
-Add SnapAlert to your main Vue entry file (usually `main.js` or `main.ts`).
+Add SnapAlert to your main React entry file (usually `index.js` or `app.js`).
 
 ```javascript
-import { createApp } from 'vue';
-import App from './App.vue';
-import SnapAlert from 'vue-snap-alert';
-import 'vue-snap-alert/dist/snapAlert.css'; // Import the CSS
-
-const app = createApp(App);
-
-// Install the SnapAlert plugin
-app.use(SnapAlert);
-
-app.mount('#app');
+import SnapAlert from 'react-snap-alert';
+import 'react-snap-alert/dist/snapAlert.css'; // Import the CSS
 ```
 
 ### Step 2: Display Alerts
@@ -41,25 +32,31 @@ You can now use SnapAlert to display different types of alerts. Here are some ex
 #### Basic Alert
 
 ```javascript
-this.$SnapAlert.alert('Alert Title', 'This is a basic alert.');
+SnapAlert.alert('Alert Title', 'This is a basic alert.');
 ```
 
 #### Success Alert
 
 ```javascript
-this.$SnapAlert.success('Success', 'Your operation was successful!');
+SnapAlert.success('Success', 'Your operation was successful!');
+```
+
+#### Info Alert
+
+```javascript
+SnapAlert.info('info', 'Something went Attension.');
 ```
 
 #### Error Alert
 
 ```javascript
-this.$SnapAlert.error('Error', 'Something went wrong.');
+SnapAlert.error('Error', 'Something went wrong.');
 ```
 
 #### Confirmation Alert with Actions
 
 ```javascript
-this.$SnapAlert.warning('Are you sure?', 'This action cannot be undone.', {
+SnapAlert.warning('Are you sure?', 'This action cannot be undone.', {
   enableConfirm: true,
   enableCancel: true,
   onConfirm: () => {
@@ -76,7 +73,7 @@ this.$SnapAlert.warning('Are you sure?', 'This action cannot be undone.', {
 You can customize the options for each alert. For example:
 
 ```javascript
-this.$SnapAlert.info('Information', 'This is an info alert.', {
+SnapAlert.info('Information', 'This is an info alert.', {
   position: 'top right',
   duration: 5000,
   icon: 'custom-icon-class', // Replace with a Boxicons class name (https://boxicons.com)
@@ -84,25 +81,23 @@ this.$SnapAlert.info('Information', 'This is an info alert.', {
 });
 ```
 
-### 4. Displaying HTML Alerts
+### Step 4: Displaying HTML Alerts
 
 You can display various types of alerts using the provided methods. Below is an example of how to show a custom HTML alert:
 
 ```javascript
-this.$SnapAlert.html(`<img src="https://placehold.co/600x400" />`, {
-        position: 'top right',
-        duration: 5000,
-    }
-);
+SnapAlert.html(`<img src="https://placehold.co/600x400" />`, {
+  position: 'top right',
+  duration: 5000,
+});
 ```
 
+### Step 5: Set Global Options with SnapOptions
 
-### Step 5: Set Global Options with `SnapOptions`
-
-You can use the `SnapOptions` method to set global default options for all alerts. This is particularly useful if you want to maintain consistency across multiple alerts.
+You can use the SnapOptions method to set global default options for all alerts. This is particularly useful if you want to maintain consistency across multiple alerts.
 
 ```javascript
-this.$SnapAlert.SnapOptions({
+SnapAlert.Options({
   duration: 5000,
   isDark: true,
   position: 'bottom right'
@@ -115,14 +110,14 @@ After setting global options, all subsequent alerts will use the specified defau
 
 ```javascript
 // Set global options
-this.$SnapAlert.SnapOptions({
+SnapAlert.Options({
   duration: 4000,
   isDark: false,
 });
 
 // Now all alerts will have these default settings
-this.$SnapAlert.success('Global Success', 'This alert will use global options.');
-this.$SnapAlert.error('Global Error', 'This alert will also use global options.');
+SnapAlert.success('Global Success', 'This alert will use global options.');
+SnapAlert.error('Global Error', 'This alert will also use global options.');
 ```
 
 ### Available Options
