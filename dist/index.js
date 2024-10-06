@@ -160,7 +160,7 @@ const SnapAlert = {
 
                 setTimeout(() => {
                     alert.classList.remove('alert-'+settings.animation+'-in');
-                    alert.classList.add('alert-'+settings.animation+'-out');
+                    alert.classList.add('alert-'+settings.animation+'-out'); 
                 }, (key*20));
                 setTimeout(() => {
                     alert.remove();
